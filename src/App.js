@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import { Contact, Hero, Navbar } from "./components";
+import Gallery from "./components/canvas/gallery/Gallery";
+import Race from "./components/canvas/marbelRace/Race";
 
-function App() {
+import Skill from "./components/canvas/Skill/Skill";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="relative z-0 bg-primary">
+    <>
+      <Navbar />
+      <Routes>
+        {/* <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center"> */}
+
+        <Route path="/" element={<Contact />} />
+        {/* <Route path="tech" element={<Skill />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="gallery" element={<Gallery />} />
+        <Route path="race" element={<Race />} /> */}
+      </Routes>
+    </>
+
+    // </div>
   );
-}
+};
 
 export default App;

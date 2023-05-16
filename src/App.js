@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Contact, Hero, Navbar } from "./components";
 import Gallery from "./components/canvas/gallery/Gallery";
-import Race from "./components/canvas/marbelRace/Race";
 
 import Skill from "./components/canvas/Skill/Skill";
 
@@ -17,7 +16,7 @@ const App = () => {
         {/* <Route path="tech" element={<Skill />} />
         <Route path="contact" element={<Contact />} />
         <Route path="gallery" element={<Gallery />} />
-        <Route path="race" element={<Race />} /> */}
+         */}
       </Routes>
     </>
 

@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import About from "./About";
+
 import { ComputersCanvas } from "./canvas";
 import TextCanvas from "./canvas/Text";
 import Experience from "./Experience";
-import Works from "./Works";
 
 const Hero = () => {
   return (
@@ -58,9 +57,9 @@ const Hero = () => {
           </div>
         </a>
       </div>
-      {/* <About />
+      {/* 
       <Experience />
-      <Works /> */}
+     */}
     </section>
   );
 };
